@@ -2,6 +2,8 @@ package app.model;
 
 import java.time.LocalDate;
 
+import app.exception.EmprestimoException;
+
 /**
  * Representa um empréstimo realizado na biblioteca.
  * 
@@ -23,6 +25,20 @@ import java.time.LocalDate;
  * @author Grupo 4
  * @version 1.0
  */
+/**
+ * Confirma e registra um empréstimo.
+ *
+ * Verifica se:
+ * - Usuário e item foram buscados
+ * - Usuário não atingiu o limite de empréstimos
+ *
+ * Atualiza o status do item para EMPRESTADO e
+ * calcula a data prevista de devolução.
+ *
+ * @return empréstimo criado
+ * @throws EmprestimoException se alguma regra de negócio for violada
+ */
+
 public class Emprestimo {
 
     private int id;
@@ -42,7 +58,16 @@ public class Emprestimo {
      * @param dataPrevistaDevolucao    Data limite para devolução do item.
      * @param status                   Estado atual do empréstimo.
      */
-    public Emprestimo(int id, Usuario usuario, ItemAcervo item, LocalDate dataEmprestimo,
+    /**
+ * Representa um empréstimo realizado por um usuário.
+ *
+ * Armazena informações como:
+ * - Usuário
+ * - Item emprestado
+ * - Datas do empréstimo
+ * - Status do empréstimo
+ */
+public Emprestimo(int id, Usuario usuario, ItemAcervo item, LocalDate dataEmprestimo,
                       LocalDate dataPrevistaDevolucao, StatusEmprestimo status) {
         this.id = id;
         this.usuario = usuario;

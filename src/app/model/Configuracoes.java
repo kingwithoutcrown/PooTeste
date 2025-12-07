@@ -1,5 +1,11 @@
 package app.model;
 //TESTE
+/**
+ * Classe responsável por armazenar configurações
+ * gerais do sistema.
+ *
+ * Exemplo: limite máximo de empréstimos simultâneos.
+ */
 public class Configuracoes {
 
     private int limiteEmprestimos = 3;

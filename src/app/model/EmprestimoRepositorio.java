@@ -26,6 +26,13 @@ import java.util.List;
  * @author Grupo 4
  * @version 1.0
  */
+
+/**
+ * Repositório responsável por armazenar e gerenciar
+ * os empréstimos realizados no sistema.
+ *
+ * Simula um banco de dados em memória.
+ */
 public class EmprestimoRepositorio {
 
     private List<Emprestimo> emprestimos = new ArrayList<>();
@@ -48,6 +55,17 @@ public class EmprestimoRepositorio {
      * 
      * @throws IllegalArgumentException Caso alguma regra de negócio seja violada.
      */
+    /**
+ * Cria um novo empréstimo, aplicando regras de validação.
+ *
+ * @param usuario usuário que realiza o empréstimo
+ * @param item item a ser emprestado
+ * @param dataEmprestimo data do empréstimo
+ * @param dataPrevistaDevolucao data esperada para devolução
+ * @return empréstimo criado
+ * @throws IllegalArgumentException se o item já estiver emprestado
+ */
+
     public Emprestimo criarEmprestimo(
             Usuario usuario,
             ItemAcervo item,

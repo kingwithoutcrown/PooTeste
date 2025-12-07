@@ -5,6 +5,11 @@ package app.model;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Repositório responsável por armazenar e gerenciar
+ * os usuários do sistema.
+ */
+
 public class UsuarioRepositorio {
 
     private List<Usuario> usuarios = new ArrayList<>();

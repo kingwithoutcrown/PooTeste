@@ -5,6 +5,19 @@ import app.exception.*;
 
 import javax.swing.JOptionPane;
 import java.time.LocalDate;
+/**
+ * Controlador responsável por gerenciar as operações
+ * de empréstimo de itens do acervo.
+ *
+ * Este controller aplica todas as regras de negócio:
+ * - Validação de usuário
+ * - Verificação de status do usuário
+ * - Validação de item
+ * - Verificação de disponibilidade do item
+ * - Controle do limite de empréstimos simultâneos
+ *
+ * Atua como intermediário entre a View e o Model.
+ */
 
 public class EmprestimoController {
 

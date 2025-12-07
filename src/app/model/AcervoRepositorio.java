@@ -3,6 +3,11 @@ package app.model;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Repositório responsável por armazenar os itens
+ * do acervo da biblioteca.
+ */
+
 public class AcervoRepositorio {
 
     private List<ItemAcervo> itens = new ArrayList<>();

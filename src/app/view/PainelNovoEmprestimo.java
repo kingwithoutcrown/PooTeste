@@ -8,6 +8,10 @@ import app.controller.EmprestimoController;
 
 import javax.swing.*;
 import java.awt.*;
+/**
+ * Painel responsável por permitir a criação
+ * de novos empréstimos por meio da interface gráfica.
+ */
 
 public class PainelNovoEmprestimo extends JPanel {
 
